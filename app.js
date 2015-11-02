@@ -16,5 +16,10 @@ app.get('/about', function(req, res) {
   });
 });
 
+app.get('/links', function(req, res) {
+    res.render('links', {
+  });
+});
+
 app.listen(8080);
 module.exports.getApp = app;
