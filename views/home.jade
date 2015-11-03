@@ -1,13 +1,8 @@
-html
-  head
-    title='node/jade test'
-    link(rel='stylesheet', href='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css')
-  body
-    div.container
-      div.jumbotron
-        h1 Testing docker integration
-        p Here's the Azure site...
-        p 
-          a.btn.btn-primary(href="http://ajhanson-tasks.azurewebsites.net") try this
-        p or you can try the 
-          a(href="/about") "about us"
+extends base
+block title
+	h1 Testing docker integration
+block content
+	p 
+		a.btn.btn-primary(href="http://ajhanson-tasks.azurewebsites.net") try this Azure site
+	p or you can try the 
+		a(href="/about") "about us"

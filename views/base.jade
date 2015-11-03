@@ -1,0 +1,19 @@
+html
+	head
+	title='node/jade test'
+	link(rel='stylesheet', href='http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+	script(src='https://code.jquery.com/jquery-2.1.4.min.js')
+	script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+body
+	div.navbar.navbar-inverse.navbar-fixed-top
+			div.container
+				a.navbar-brand(href='/') Docker Test
+				ul.nav.navbar-nav
+					li 
+						a(href='/about') About
+					li 
+						a(href='/links') Links
+	div.container
+		div.jumbotron
+			block title
+			block content
